@@ -1,0 +1,19 @@
+@import "../_variables";
+@import "../_mixins";
+
+.about {
+    margin: @zero;
+    padding: @small * 0.6 @zero @small * 0.5;
+
+    h3 {
+        .heading(500, 30px, @black);
+        width: 100vw;
+        .line--small;
+    }
+
+    p {
+        .text(@medium, @text-color);
+        .justify;
+        padding-left: @small * 0.8;
+    }
+}

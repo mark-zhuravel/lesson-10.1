@@ -1,0 +1,26 @@
+@import "../_variables";
+@import "../_mixins";
+
+header {
+    background-color: @secondary-color;
+}
+
+.menu {
+    .flex__between();
+    width: 40vw;
+    margin: @zero;
+    padding-top: 40px;
+    padding-left: @left;
+    list-style: none;
+    flex-wrap: wrap;
+
+    a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            color: #007bff;
+        }
+    }
+}

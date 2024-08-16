@@ -1,0 +1,34 @@
+@import "../_variables";
+@import "../_mixins";
+
+
+.container {
+    padding-left: @zero;
+    padding-top: @small * 1.2;
+    padding-bottom: @small * 1.1;
+
+    h1 {
+        .heading(500, 36px, @black);
+        .line;
+        margin: @center;
+        width: 100vw;
+        text-align: center;
+    }
+
+    p {
+        .text(@medium, @text-color);
+        .justify;
+        margin: @zero;
+        padding: @small * 0.8;
+    }
+
+    a {
+        .text(@medium, @primary-color);
+        margin: @center;
+        background-color: @tablet-color;
+
+        &:hover {
+            background-color: lighten(@tablet-color, 10%);
+        }
+    }
+}

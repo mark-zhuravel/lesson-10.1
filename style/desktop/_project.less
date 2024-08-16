@@ -1,0 +1,38 @@
+@import "../_variables";
+@import "../_mixins";
+
+.project {
+    background-color: @blue;
+    padding: @small;
+
+    &__flex {
+        .flex__between;
+        margin: @center;
+        width: 80vw;
+
+        .project__item {
+            width: 15%;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            img {
+                width: @small;
+                height: @small;
+            }
+
+            &--txt {
+                h4 {
+                    .heading(500, 21px, @primary-color);
+                    margin: @zero;
+                }
+
+                p {
+                   .text(@third, @primary-color);
+                    margin: @zero;
+                    width: auto;
+                }
+            }
+        }
+    }
+}    

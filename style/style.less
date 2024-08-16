@@ -1,0 +1,53 @@
+@import "_variables";
+@import "_mixins";
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+//Desktop version
+
+@import "../style/desktop/_header.less";
+
+@import "../style/desktop/_container.less";
+
+@import "../style/desktop/_about.less";
+
+@import "../style/desktop/_project.less";
+
+@import "../style/desktop/_wrapper.less";
+
+@import "../style/desktop/_footer.less";
+
+//Tablet version
+
+@media @tablet {
+    @import "../style/tablet/_header.less";
+
+    @import "../style/tablet/_container.less";
+
+    @import "../style/tablet/_about.less";
+
+    @import "../style/tablet/_project.less";
+
+    @import "../style/tablet/_wrapper.less";
+
+    @import "../style/tablet/_footer.less";
+}
+
+//Mobile version
+
+@media @mobile {
+    @import "../style/mobile/_header.less";
+
+    @import "../style/mobile/_container.less";
+
+    @import "../style/mobile/_about.less";
+
+    @import "../style/mobile/_project.less";
+
+    @import "../style/mobile/_wrapper.less";
+
+    @import "../style/mobile/_footer.less";
+}

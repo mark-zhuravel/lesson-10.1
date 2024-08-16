@@ -1,0 +1,22 @@
+@import "../_variables";
+@import "../_mixins";
+
+.wrapper {
+    h3 {
+        .heading(500, 28px, @black);
+        margin-top: @zero;
+        width: 60vw;
+    }
+
+    p {
+        .text(@mob-width, @text-color);
+        .justify;
+        margin: @zero;
+        padding: @zero @padding @padding * 1.25;
+    }
+
+    iframe {
+        height: auto;
+        margin: @zero;
+    }
+}

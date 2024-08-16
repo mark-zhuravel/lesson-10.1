@@ -1,0 +1,35 @@
+.flex__between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading(@weight, @size, @color) {
+    font-weight: @weight;
+    font-size: @size;
+    color: @color;
+}
+
+.text(@width, @color,) {
+    width: @width;
+    color: @color;
+}
+
+.line {
+    border-bottom: 3px solid black;
+}
+
+.line--small {
+    border-bottom: 2px solid black;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.grid(@columns, @gap, @padding, @align) {
+    display: grid;
+    grid-template-columns: @columns;
+    gap: @gap;
+    padding: @padding;
+    align-items: @align;
+}
