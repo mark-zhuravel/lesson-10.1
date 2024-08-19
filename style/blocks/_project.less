@@ -36,3 +36,24 @@
         }
     }
 }    
+
+@media @tablet {
+    .project {
+        padding: @zero;
+        background-color: @tablet-color;
+    
+        &__flex {
+            .grid(1fr 1fr 1fr, 20px, 20px, center)
+        }
+    }
+}
+
+@media @mobile {
+    .project {
+        padding: @zero;
+    
+        &__flex {
+            .grid(1fr 1fr, @padding, @padding, center);
+        }
+    }
+}

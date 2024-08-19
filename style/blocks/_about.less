@@ -1,0 +1,53 @@
+@import "../_variables";
+@import "../_mixins";
+
+.about {
+    margin: 60px auto 50px;
+    text-align: center;
+    width: @third;
+
+    h3 {
+        .heading(500, 32px, @black)
+    }
+
+    p {
+        .text(33vw, @text-color)
+    }
+}
+
+@media @tablet {
+    .about {
+        margin: @zero;
+        padding: @small * 0.6 @zero @small * 0.5;
+    
+        h3 {
+            .heading(500, 30px, @black);
+            width: 100vw;
+            .line--small;
+        }
+    
+        p {
+            .text(@medium, @text-color);
+            .justify;
+            padding-left: @small * 0.8;
+        }
+    }
+}
+
+@media @mobile {
+    .about {
+        margin: @zero;
+    
+        h3 {
+            .heading(500, 28px, @black);
+            padding-left: @padding * 0.25;
+        }
+    
+        p {
+            .text(@mob-width, @text-color);
+            .justify;
+            padding-bottom: @padding * 0.75;
+            padding-left: @padding * 0.5;
+        }
+    }
+}

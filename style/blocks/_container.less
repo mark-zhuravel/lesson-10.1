@@ -1,0 +1,89 @@
+@import "../_variables";
+@import "../_mixins";
+
+.container {
+    .flex__between();
+    background-color: @secondary-color;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: @left;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    h1 {
+        .heading(500, 48px, @black)
+    }
+
+    p {
+        .text(@third, @text-color)
+    }
+
+    a {
+        color: @primary-color;
+        background-color: @blue;
+        padding: 20px;
+        width: 10vw;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background-color: darken(@blue, 10%);
+        }
+    }
+}
+
+@media @tablet {
+    .container {
+        padding-left: @zero;
+        padding-top: @small * 1.2;
+        padding-bottom: @small * 1.1;
+    
+        h1 {
+            .heading(500, 36px, @black);
+            .line;
+            margin: @center;
+            width: 100vw;
+            text-align: center;
+        }
+    
+        p {
+            .text(@medium, @text-color);
+            .justify;
+            margin: @zero;
+            padding: @small * 0.8;
+        }
+    
+        a {
+            .text(@medium, @primary-color);
+            margin: @center;
+            background-color: @tablet-color;
+    
+            &:hover {
+                background-color: lighten(@tablet-color, 10%);
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .container {
+        padding: @padding * 2 @padding @padding * 1.75;
+    
+        h1 {
+            .heading(500, 32px, @black);
+            margin: @center;
+        }
+    
+        p {
+           .text(@mob-width, @text-color);
+           .justify;
+           margin: @zero;
+        }
+    
+        a {
+            width: 70vw;
+            margin: @center;
+            padding: @padding * 0.5;
+        }
+    }
+}
